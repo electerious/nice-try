@@ -22,7 +22,8 @@
   ],
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "test": "istanbul cover _mocha"
+    "test": "istanbul cover _mocha",
+    "prepublish": "npm test"
   },
   "devDependencies": {
     "chai": "^3.5.0",
