@@ -29,4 +29,4 @@ niceTry(true) // undefined
 
 ### Returns
 
-- `value` `{?*}` Return-value of the function when no error occurred.
+- `{?*}` Return-value of the function when no error occurred.
