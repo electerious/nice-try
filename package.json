@@ -26,9 +26,9 @@
     "prepublish": "npm test"
   },
   "devDependencies": {
-    "chai": "^4.0.1",
-    "coveralls": "^2.11.9",
-    "nyc": "^11.0.2",
-    "mocha": "^3.0.1"
+    "chai": "^4.1.1",
+    "coveralls": "^2.13.1",
+    "nyc": "^11.1.0",
+    "mocha": "^3.5.0"
   }
 }
