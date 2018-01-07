@@ -22,8 +22,7 @@
   ],
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "test": "nyc node_modules/mocha/bin/_mocha",
-    "prepublish": "npm test"
+    "test": "nyc node_modules/mocha/bin/_mocha"
   },
   "devDependencies": {
     "chai": "^4.1.1",
