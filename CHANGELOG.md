@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Changed
 
-- Drop support for Node.js versions older than version 9
+- Drop support for Node.js versions older than version 10
 
 ## [2.0.0] - 2018-10-28
 
