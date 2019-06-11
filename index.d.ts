@@ -1,3 +1,3 @@
 declare module "nice-try" {
-  export default function update(f: Function): any;
+  export default function niceTry(f: Function): any;
 }
