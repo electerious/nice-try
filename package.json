@@ -1,11 +1,12 @@
 {
   "name": "nice-try",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "authors": [
     "Tobias Reich <tobias@electerious.com>"
   ],
   "description": "Tries to execute a function and discards any error that occurs",
   "main": "src/index.js",
+  "types": "index.d.ts",
   "keywords": [
     "try",
     "catch",
