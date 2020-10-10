@@ -19,6 +19,9 @@ niceTry(() => JSON.parse('true')) // true
 niceTry(() => JSON.parse('truee')) // undefined
 niceTry() // undefined
 niceTry(true) // undefined
+
+await niceTry.promise(async () => JSON.parse('true')) // true
+await niceTry.promise(async () => JSON.parse('truee')) // undefined
 ```
 
 ## API
