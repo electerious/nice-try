@@ -30,14 +30,15 @@ describe('index()', function() {
 	})
 
 	it('should return a value when called with an asynchronous function that returns a value', async function () {
-		
+
 		assert.strictEqual(await index.promise(async () => JSON.parse('truee')), undefined)
-		
+
 	})
-	
+
 	it('should return undefined when called with an asynchronous function that throws an error', async function () {
 
 		assert.strictEqual(await index.promise(async () => JSON.parse('true')), true)
 
 	})
+
 })
