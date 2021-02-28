@@ -1,6 +1,6 @@
 # nice-try
 
-[![Travis Build Status](https://travis-ci.org/electerious/nice-try.svg?branch=master)](https://travis-ci.org/electerious/nice-try) [![Coverage Status](https://coveralls.io/repos/github/electerious/nice-try/badge.svg?branch=master)](https://coveralls.io/github/electerious/nice-try?branch=master) [![Dependencies](https://david-dm.org/electerious/nice-try.svg)](https://david-dm.org/electerious/nice-try#info=dependencies) [![Greenkeeper badge](https://badges.greenkeeper.io/electerious/nice-try.svg)](https://greenkeeper.io/)
+![Build](https://github.com/electerious/nice-try/workflows/Build/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/electerious/nice-try/badge.svg?branch=master)](https://coveralls.io/github/electerious/nice-try?branch=master)
 
 A function that tries to execute a function and discards any error that occurs.
 
