@@ -1,6 +1,6 @@
 {
   "name": "nice-try",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Tries to execute a function and discards any error that occurs",
   "keywords": [
     "try",
