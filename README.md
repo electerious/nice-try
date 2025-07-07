@@ -30,13 +30,25 @@ await niceTry(async () => JSON.parse('error')) // undefined
 
 ## API
 
-### Parameters
+### `nice-try`
 
-- `fn` `{Function}` Function that might or might not throw an error.
+#### Parameters
 
-### Returns
+- `fn` `{Function}` The function to execute.
 
-- `{?*}` Return-value of the function when no error occurred.
+#### Returns
+
+- `{*}` The return value of the function, or `undefined` if an error occurred.
+
+### `nice-try/promises`
+
+#### Parameters
+
+- `fn` `{Function}` An asynchronous function to execute.
+
+#### Returns
+
+- `{Promise<*>}` The result of the function if it resolves successfully, otherwise undefined if an error is thrown.
 
 ## What others say
 
