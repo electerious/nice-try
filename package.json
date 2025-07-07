@@ -1,32 +1,38 @@
 {
   "name": "nice-try",
   "version": "3.0.1",
-  "authors": [
-    "Tobias Reich <tobias@electerious.com>"
-  ],
   "description": "Tries to execute a function and discards any error that occurs",
-  "main": "src/index.js",
   "keywords": [
     "try",
     "catch",
     "error"
   ],
-  "license": "MIT",
   "homepage": "https://github.com/electerious/nice-try",
   "repository": {
     "type": "git",
     "url": "https://github.com/electerious/nice-try.git"
   },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./promises": "./src/promises.js"
+  },
+  "main": "src/index.js",
   "files": [
     "src"
   ],
   "scripts": {
-    "coveralls": "nyc report --reporter=lcov",
-    "test": "nyc node_modules/mocha/bin/_mocha"
+    "format": "npm run prettier -- --write",
+    "prettier": "prettier --ignore-path .gitignore '**/*.{js,json,md}'",
+    "test": "npm run prettier -- --check && node --test"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^9.0.1",
-    "nyc": "^15.1.0"
-  }
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.18"
+  },
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ]
 }

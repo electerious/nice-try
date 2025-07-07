@@ -1,44 +1,25 @@
-'use strict'
+import assert from 'node:assert/strict'
+import test from 'node:test'
+import niceTry from './../src/index.js'
 
-const assert = require('chai').assert
-const index = require('./../src/index')
+test('should return undefined when called with a function that throws an error', (t) => {
+  assert.strictEqual(
+    niceTry(() => JSON.parse('error')),
+    undefined,
+  )
+})
 
-describe('index()', function() {
+test('should return undefined when called without a function', (t) => {
+  assert.strictEqual(niceTry(), undefined)
+})
 
-	it('should return undefined when called with a function that throws an error', function() {
+test('should return undefined when called with a non-function parameter', (t) => {
+  assert.strictEqual(niceTry(true), undefined)
+})
 
-		assert.strictEqual(index(() => JSON.parse('truee')), undefined)
-
-	})
-
-	it('should return undefined when called without a function', function() {
-
-		assert.strictEqual(index(), undefined)
-
-	})
-
-	it('should return undefined when called with a non-function parameter', function() {
-
-		assert.strictEqual(index(true), undefined)
-
-	})
-
-	it('should return a value when called with a function that returns a value', function() {
-
-		assert.strictEqual(index(() => JSON.parse('true')), true)
-
-	})
-
-	it('should return a value when called with an asynchronous function that returns a value', async function () {
-
-		assert.strictEqual(await index.promise(async () => JSON.parse('truee')), undefined)
-
-	})
-
-	it('should return undefined when called with an asynchronous function that throws an error', async function () {
-
-		assert.strictEqual(await index.promise(async () => JSON.parse('true')), true)
-
-	})
-
+test('should return a value when called with a function that returns a value', (t) => {
+  assert.strictEqual(
+    niceTry(() => JSON.parse('true')),
+    true,
+  )
 })

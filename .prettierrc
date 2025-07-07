@@ -1,0 +1,8 @@
+{
+  "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-packagejson"],
+  "endOfLine": "auto",
+  "printWidth": 120,
+  "quoteProps": "consistent",
+  "semi": false,
+  "singleQuote": true
+}
