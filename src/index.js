@@ -1,23 +1,14 @@
-'use strict'
-
+/**
+ * Executes the provided function and returns its result.
+ * If an error is thrown during execution, the error is silently ignored and `undefined` is returned.
+ * @param {Function} fn - The function to execute.
+ * @returns {*} The return value of the function, or `undefined` if an error occurred.
+ */
 /**
  * Tries to execute a function and discards any error that occurs.
- * @param {Function} fn - Function that might or might not throw an error.
- * @returns {?*} Return-value of the function when no error occurred.
  */
-module.exports = function(fn) {
-
-	try { return fn() } catch (e) {}
-
-}
-
-/**
- * Tries to execute an asynchronous function and discards any error that occurs.
- * @param {Function} fn - Asynchronous function that might or might not throw an error.
- * @returns {?*} Promise which resolves with the return-value of the asynchronous function when no error occurred.
- */
-module.exports.promise = async function (fn) {
-
-	try { return await fn() } catch (e) {}
-
+export default function niceTry(fn) {
+  try {
+    return fn()
+  } catch (e) {}
 }

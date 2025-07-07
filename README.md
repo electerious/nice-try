@@ -1,27 +1,31 @@
 # nice-try
 
-![Build](https://github.com/electerious/nice-try/workflows/Build/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/electerious/nice-try/badge.svg?branch=master)](https://coveralls.io/github/electerious/nice-try?branch=master)
+![Build](https://github.com/electerious/nice-try/workflows/Build/badge.svg)
 
 A function that tries to execute a function and discards any error that occurs.
 
 ## Install
 
-```
+```bash
 npm install nice-try
 ```
 
 ## Usage
 
 ```js
-const niceTry = require('nice-try')
+import niceTry from 'nice-try'
 
 niceTry(() => JSON.parse('true')) // true
-niceTry(() => JSON.parse('truee')) // undefined
+niceTry(() => JSON.parse('error')) // undefined
 niceTry() // undefined
 niceTry(true) // undefined
+```
 
-await niceTry.promise(async () => JSON.parse('true')) // true
-await niceTry.promise(async () => JSON.parse('truee')) // undefined
+```js
+import niceTry from 'nice-try/promises'
+
+await niceTry(async () => JSON.parse('true')) // true
+await niceTry(async () => JSON.parse('error')) // undefined
 ```
 
 ## API
