@@ -23,10 +23,10 @@
     "src"
   ],
   "scripts": {
-    "eslint": "eslint **/*.js",
+    "eslint": "eslint \"**/*.js\"",
     "format": "npm run eslint -- --fix && npm run prettier -- --write",
     "lint": "npm run eslint && npm run prettier -- --check",
-    "prettier": "prettier --ignore-path .gitignore **/*.{js,json,md,yml}",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,json,md,yml}\"",
     "test": "npm run lint && node --test"
   },
   "devDependencies": {
