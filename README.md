@@ -1,6 +1,6 @@
 # nice-try
 
-![Build](https://github.com/electerious/nice-try/workflows/Build/badge.svg)
+[![Test](https://github.com/electerious/nice-try/actions/workflows/test.yml/badge.svg)](https://github.com/electerious/nice-try/actions/workflows/test.yml)
 
 A function that tries to execute a function and discards any error that occurs.
 
@@ -38,7 +38,7 @@ await niceTry(async () => JSON.parse('error')) // undefined
 
 #### Returns
 
-- `{*}` The return value of the function, or `undefined` if an error occurred.
+- `{any}` The return value of the function, or `undefined` if an error occurred.
 
 ### `nice-try/promises`
 
@@ -48,7 +48,7 @@ await niceTry(async () => JSON.parse('error')) // undefined
 
 #### Returns
 
-- `{Promise<*>}` The result of the function if it resolves successfully, otherwise undefined if an error is thrown.
+- `{Promise<any>}` The result of the function if it resolves successfully, otherwise undefined if an error is thrown.
 
 ## What others say
 
