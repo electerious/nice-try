@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [4.0.2] - 2025-08-16
 
@@ -17,8 +17,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 - Updated README to match functions
 
 ## [4.0.0] - 2025-07-07
-
-Modernized codebase with ESM modules, less dependencies, updated Node.js support and common code style.
 
 ### Changed
 
@@ -37,7 +35,7 @@ Modernized codebase with ESM modules, less dependencies, updated Node.js support
 ### Changed
 
 - Drop support for Node.js versions older than version 10
-- Swicthed to GitHub actions
+- Switched to GitHub actions
 
 ## [2.1.0] - 2020-10-10
 
