@@ -10,7 +10,7 @@
   "homepage": "https://github.com/electerious/nice-try",
   "repository": {
     "type": "git",
-    "url": "https://github.com/electerious/nice-try.git"
+    "url": "git+https://github.com/electerious/nice-try.git"
   },
   "license": "MIT",
   "type": "module",
