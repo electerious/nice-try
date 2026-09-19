@@ -30,9 +30,9 @@
     "test": "npm run lint && node --test"
   },
   "devDependencies": {
-    "@electerious/eslint-config": "^5.0.0",
-    "@electerious/prettier-config": "^4.0.0",
-    "eslint": "^9.33.0",
+    "@electerious/eslint-config": "^6.0.0-rc.4",
+    "@electerious/prettier-config": "^5.0.0",
+    "eslint": "^10.8.1",
     "prettier": "^3.6.2"
   },
   "authors": [
